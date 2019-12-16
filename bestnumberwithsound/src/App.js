@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  function setSmall() {
+    document.getElementById('1').setAttribute("ry", 40.5);
+  }
+  function setBigMouth() {
+    document.getElementById('1').setAttribute("ry", 50);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +16,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <svg width="488" height="468" viewBox="0 0 488 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.9">
+            <ellipse opacity="0.34" cx="244" cy="234" rx="244" ry="234" fill="#F91E1E" />
+            <ellipse id="1" cx="245" cy="340.5" rx="88" ry="40.5" fill="white" />
+            <ellipse id="2" cx="262" cy="241.5" rx="30" ry="25.5" fill="white" />
+            <ellipse id="3" cx="175" cy="241.5" rx="31" ry="25.5" fill="#FCFFFC" />
+          </g>
+        </svg>
         <a
           className="App-link"
           href="https://reactjs.org"
