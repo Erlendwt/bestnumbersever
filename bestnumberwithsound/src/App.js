@@ -3,6 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  function setSmallHead(x) {
+    document.getElementById("head").setAttribute("rx",250*x)
+    document.getElementById("head").setAttribute("cx",250*x)
+    document.getElementById("head").setAttribute("ry",250*x)
+    document.getElementById("head").setAttribute("cy",250*x)
+}
   function setSmall() {
     document.getElementById('1').setAttribute("ry", 40.5);
   }
